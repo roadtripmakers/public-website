@@ -36,6 +36,21 @@ a:focus {
     color: red;
 }
 
+.bg-danger {
+    padding: 8px;
+    text-align: center;
+}
+
+.social-footer {
+    
+}
+
+.social-footer li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -43,6 +58,7 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: bold;
 }
 
 p {
@@ -60,6 +76,7 @@ p {
         background: #fff;
         color: #666666;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+        margin-bottom: 16px;
 }
 
 .ruta-card-header {
