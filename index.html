@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Comunidad que organiza excursiones de bajo costo por toda la República Dominicana. Acompáñanos y sé parte de la aventura!!">
     <meta name="author" content="">
 
     <title>RoadTrip Makers</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -46,23 +47,27 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="favicon.png" alt="" class="navbar-brand-icon"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">¿Qué es eso de #RoadTripMakers?</a>
+                        <a class="page-scroll" href="#rutas">Próximas rutas</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">¿Cómo lo hacemos posible?</a>
+                        <a class="page-scroll" href="#about">¿Qué es #RoadTripMakers?</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#services">¿Cómo lo hacemos?</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">RoadTrips en el 2017</a>
+                        <a class="page-scroll" href="#portfolio">Imagenes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contactanos!</a>
+                        <a class="page-scroll" href="#contact">Contactanos</a>
                     </li>
                 </ul>
             </div>
@@ -74,25 +79,417 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <img class="logo" src="img/logo.png"/>
+                <img class="logo" src="img/logo.png" />
                 <p><span>Comunidad que organiza excursiones de bajo costo por toda la República Dominicana.
                          Acompáñanos y sé parte de la aventura!!</span></p>
-                         <p><span>#RoadTripMakers</span></p>
+                <p><span>#RoadTripMakers</span></p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">¿Quiénes somos?</a>
             </div>
         </div>
     </header>
+    
+       <section class="bg-dark" id="rutas">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Próximas rutas</h2>
+                    <hr class="light">
+                    <p class="text-faded">Esta sección podras encontrar informacion sobre nuestas próximas aventuras.</p>
+                </div>
+            </div>
+            <div class="row rutas-grid">
+               <!-- Este bloque contiene la informacion de una ruta -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="ruta-card" id="ruta-card">
+                   <div class="no-cupo hide">
+                        <div class="no-cupo-content">
+                            <img src="img/sad-face.png" alt="">
+                            <p><b>No hay cupos disponibles</b></p>
+                            <p>Escribenos a <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a> para notificarse si se abre algún cupo.</p>
+                        </div>
+                    </div>
+                   <div class="ruta-card-header">
+                       <img src="img/ruta-1.jpg" alt="">
+                       <div class="ruta-card-disponible">
+                           Cupo disponible <span class="cupo-disponible">25</span>
+                       </div>
+                   </div>
+                   <div class="ruta-card-content">
+                       <ul class="ruta-card-meta">
+                           <li>RD$1,150</li>
+                           <li>Mayo 29</li>
+                       </ul>
+                       <h4>A rodar Pa' Lo Bueye</h4>
+                       <p>Un #DomingoChill rodando por la impresionante provincia de PUERTO PLATA!</p>
+                       <div class="ruta-card-footer">
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ruta-1">Más información</button>
+                       </div>
+                   </div>
+    <!-- Ruta Nav tabs - Se debe modificar el id para cada ruta-->
+    <div class="modal fade" id="ruta-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!--     Aqui se indica el titulo para el modal de la ruta -->
+            <h3 class="modal-title" id="myModalLabel">A rodar Pa' Lo Bueye</h3>
+          </div>
+      <div class="modal-body">
+       <div>
 
-    <section class="bg-primary" id="about">
+  <!-- Ruta Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#informacion" aria-controls="informacion" role="tab" data-toggle="tab">Información general</a></li>
+    <li role="presentation"><a href="#politicas" aria-controls="politicas" role="tab" data-toggle="tab">Politcas</a></li>
+    <li role="presentation"><a href="#reservarcupo" aria-controls="reservarcupo" role="tab" data-toggle="tab">Reserva tu cupo</a></li>
+  </ul>
+
+  <!-- Ruta Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="informacion">
+       <br>
+       <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
+        <h4>Horarios generales: Domingo 29 de Mayo</h4>
+        <ul>
+            <li>Santo Domingo: Bomba Total (Antigua Shell entrada las Palmas (KM9 Aut. Duarte) a las 6:00AM</li>
+            <li>Santiago: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:50AM.</li>
+        </ul>
+        <h4>Recorreremos</h4>
+        <ul>
+            <li>Moca</li>
+            <li>Pueblo de Villa Trina</li>
+            <li>Caminata comunidad de Los Bueyes (35 mins, dificultad media)</li>
+            <li>Cascada de Arroyo Grande!</li>
+            <li>Almuerzo donde Doña Altagracia frente al río! (comida cocina’ en lenia)</li> 
+        </ul>
+        <h4>Cosas para llevar:</h4>
+         <ul>
+            <li>Botella de agua (*IMPORTANTE*)</li>
+            <li>Repelente de mosquitos</li>
+            <li>Bloqueador solar</li>
+            <li>Traje de baño</li>
+            <li>Zapatos cómodos (que puedas ensuciar)</li>
+            <li>Toalla</li>
+            <li>Artículos / Medicamentos personales.</li>
+         </ul>
+         <h4>Que está incluido?</h4>
+            <ul>
+                <li>Staff de RTM</li>
+                <li>Almuerzo</li>
+                <li>Transporte</li>
+                <li>Llevamos kit de primeros auxilios, papel de baño y agua potable.</li>
+            </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="politicas">
+    <br>
+       <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
+        <p>Nota #1: Si pierdes la salida serás responsable de alcanzarnos en el próximo punto de la excursión</p>
+        <p>Nota #2: Se entregará el itinerario final con las paradas y destinos específicos de la excursión antes de subir al autobús</p>
+        <p>Nos sentimos obligados a hacer cumplir esta política ya que si al final una persona no va y retira su dinero puede poner en riesgo la excursión para todo el grupo.</p>
+        <p>Nota #5: El acceso a baño podría ser restringido, usualmente utilizamos "Paradas de Comida" para usar el baño.</p>
+        <p>Nota #6: Se te enviará el menú que tendremos para la cena y desayuno días antes del roadtrip.</p>
+        <p>Nota #7: Se separa el cupo SOLO al pagarse al menos el 40% del pago total (RD$1,140 pesos). De pagarse una porción del costo total, se debe completar el pago en la semana antes del roadtrip.</p>
+        <p>Nota #8: Nuestra política dicta que solo las primeras personas que pagan (al menos el 40%) aseguran su cupo. Si luego de asegurar el cupo deciden no participar de la excursión se le devolverá el dinero SI Y SOLO SI hay otra persona que va por ellos (dígase la siguiente en la lista de espera). Las devoluciones se harán efectivas a más tardar la semana siguiente después de la excursión utilizando la misma vía que se utilizó para realizar el pago (Ejp. depósito en cuenta de Banco Popular o BHD/Leon).</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="reservarcupo">
+       <br>
+        <p class="bg-danger">Por favor lee atentamente la <b>INFORMACIÓN GENERAL</b> y las <b>POLITICAS</b> antes de realizar tu reserva.</p>
+        <h4>Tarjetas de credito</h4>
+       <p>Para pagar con tu tarjeta de crédito/debito solo debes hacer click en el botón debajo. Al hacer click te llevara a otra pagina en donde completaras el proceso de pago.</p>
+        <h4>Deposito bancario</h4>
+        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>. 
+        <h4>En persona</h4>
+        <p>Tenemos un miembro del equipo en PUCMM-Stgo que puede recibir el pago.</p>
+    </div>
+  </div>
+
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">&larr; Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+                   
+                </div>
+                
+                </div>
+                <!-- Termina bloque de la ruta -->
+                <!-- Este bloque contiene la informacion de una ruta -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="ruta-card" id="ruta-card">
+                   <div class="no-cupo hide">
+                        <div class="no-cupo-content">
+                            <img src="img/sad-face.png" alt="">
+                            <p><b>No hay cupos disponibles</b></p>
+                            <p>Escribenos a <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a> para notificarse si se abre algún cupo.</p>
+                        </div>
+                    </div>
+                   <div class="ruta-card-header">
+                       <img src="img/ruta-1.jpg" alt="">
+                       <div class="ruta-card-disponible">
+                           Cupo disponible <span class="cupo-disponible">20</span>
+                       </div>
+                   </div>
+                   <div class="ruta-card-content">
+                       <ul class="ruta-card-meta">
+                           <li>RD$2,850 </li>
+                           <li>Mayo 20</li>
+                       </ul>
+                       <h4>#PalEste2017</h4>
+                       <p>Un #DomingoChill rodando por la impresionante provincia de PUERTO PLATA!</p>
+                       <div class="ruta-card-footer">
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ruta-2">Más información</button>
+                       </div>
+                   </div>
+    <!-- Ruta Nav tabs - Se debe modificar el id para cada ruta-->
+    <div class="modal fade" id="ruta-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!--     Aqui se indica el titulo para el modal de la ruta -->
+            <h3 class="modal-title" id="myModalLabel">#PalEste2017</h3>
+          </div>
+      <div class="modal-body">
+       <div>
+
+  <!-- Ruta Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#info-1" aria-controls="info-1" role="tab" data-toggle="tab">Información general</a></li>
+    <li role="presentation"><a href="#notas-1" aria-controls="notas-1" role="tab" data-toggle="tab">Politcas</a></li>
+    <li role="presentation"><a href="#reserva-1" aria-controls="reserva-1" role="tab" data-toggle="tab">Reserva tu cupo</a></li>
+  </ul>
+
+  <!-- Ruta Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="info-1">
+       <br>
+       <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
+        <h4>Horarios generales</h4>
+        <p><b>Sábado 20 de mayo</b></p>
+        <ul>
+            <li>SANTIAGO: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:00AM.</li>
+            <li>SANTO DOMINGO: KM9 Aut Duarte (Frente a la parada del Metro) o en La Torre Popular (Lado de la Kennedy) a las 9:00AM.</li>
+        </ul>
+        <p><b>Domingo 21 de mayo</b></p>
+          <ul>
+            <li>SANTIAGO: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:00AM.</li>
+            <li>SANTO DOMINGO: KM9 Aut Duarte (Frente a la parada del Metro) o en La Torre Popular (Lado de la Kennedy) a las 9:00AM.</li>
+        </ul>
+        <h4>Recorreremos</h4>
+        <ul>
+            <li>Los Tres Ojos</li>
+            <li>Pueblo de La Romana</li>
+            <li>La Basilica de Higuey</li>
+            <li>Playa Macao, Bavaro</li>
+            <li>Cueva Taina y piscina natural, Bavaro</li>
+            <li>Montana Redonda, Miches (Noche de camping en Montana Redonda!!)</li> 
+        </ul>
+        <h4>Cosas para llevar:</h4>
+         <ul>
+            <li>Botella de agua (*IMPORTANTE*)</li>
+            <li>Linterna</li>
+            <li>Repelente de mosquitos**</li>
+            <li>Traje de baño</li>
+            <li>Zapatos cómodos (que puedas ensuciar)</li>
+            <li>Toalla, colcha/sleeping bag para dormir</li>
+            <li>Artículos y medicamentos personales</li>
+            <li>Plato, vaso, cubiertos (opcional)</li>
+            <li>Sweater (hara frío en la noche)</li>
+         </ul>
+         <h4>Que está incluido?</h4>
+            <ul>
+                <li>Staff de RTM</li>
+                <li>Casas de campaña (Si tienes una llévala para tener más espacio)</li>
+                <li>Transporte</li>
+                <li>Entrada a Montana Redonda</li>
+                <li>Cena del sábado y desayuno </li>
+                <li>Llevamos kit de primeros auxilios, papel de baño y agua potable.</li>
+            </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="notas-1">
+    <br>
+       <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
+        <p>Nota #1: Si pierdes la salida serás responsable de alcanzarnos en el próximo punto de la excursión</p>
+        <p>Nota #2: Estas son horas de llegada aproximadas, puede variar segun el trafico y otros factores</p>
+        <p>Nota #3: Se entregará el itinerario final de la excursión antes de subir al autobús</p>
+        <p>Nota #4: No tendremos mucho espacio en el bus, así que por favor solo llevar un backpack/mochila pequeña.</p>
+        <p>Nota #5: El acceso a baño podría ser restringido, usualmente utilizamos "Paradas de Comida" para usar el baño.</p>
+        <p>Nota #6: Se te enviará el menú que tendremos para la cena y desayuno días antes del roadtrip, cocinamos nosotros mismos y tratamos de hacer cosas sencillas y fáciles.</p>
+        <p>Nota #7: En nuestras rutas la entrada a monumentos y parques nacionales es opcional (En este caso), por lo que no cubrimos los costos de entrada. Dicho esto, si decide entrar a Los Tres Ojos deberá pagarlo usted mismo. El precio por persona es de RD$100 por persona, aunque generalmente conseguimos bajar este precio al momento de la entrada por cantidad del grupo. </p>
+        <p>Nota #8: Nuestra política dicta que solo las primeras personas que pagan (al menos el 40%) aseguran su cupo. Si luego de asegurar el cupo deciden no participar de la excursión se le devolverá el dinero SI Y SOLO SI hay otra persona que va por ellos (dígase la siguiente en la lista de espera). Las devoluciones se harán efectivas a más tardar la semana siguiente después de la excursión utilizando la misma vía que se utilizó para realizar el pago (Ejp. depósito en cuenta de Banco Popular o BHD/Leon).</p>
+        <h4>Nos sentimos obligados a hacer cumplir esta política ya que si al final una persona no va y retira su dinero puede poner en riesgo la excursión para todo el grupo.</h4>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="reserva-1">
+       <br>
+        <p class="bg-danger">Por favor lee atentamente la <b>INFORMACIÓN GENERAL</b> y las <b>POLITICAS</b> antes de realizar tu reserva.</p>
+        <h4>Tarjetas de credito</h4>
+       <p>Para pagar con tu tarjeta de crédito/debito solo debes hacer click en el botón debajo. Al hacer click te llevara a otra pagina en donde completaras el proceso de pago.</p>
+        <h4>Deposito bancario</h4>
+        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>. 
+        <h4>En persona</h4>
+        <p>Tenemos un miembro del equipo en PUCMM-Stgo que puede recibir el pago.</p>
+    </div>
+  </div>
+
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">&larr; Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+                   
+                </div>
+                
+                </div>
+                <!-- Termina bloque de la ruta -->
+                  <!-- Este bloque contiene la informacion de una ruta -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="ruta-card" id="ruta-card">
+                   <div class="no-cupo">
+                        <div class="no-cupo-content">
+                            <img src="img/sad-face.png" alt="">
+                            <p><b>No hay cupos disponibles</b></p>
+                            <p>Escribenos a <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a> para notificarse si se abre algún cupo.</p>
+                        </div>
+                    </div>
+                   <div class="ruta-card-header">
+                       <img src="img/ruta-1.jpg" alt="">
+                       <div class="ruta-card-disponible">
+                           Cupo disponible <span class="cupo-disponible">0</span>
+                       </div>
+                   </div>
+                   <div class="ruta-card-content">
+                       <ul class="ruta-card-meta">
+                           <li>RD$1,850 </li>
+                           <li>Abril 9</li>
+                       </ul>
+                       <h4>#PaPuertoPlata</h4>
+                       <p>Un #DomingoChill rodando por la impresionante provincia de PUERTO PLATA!</p>
+                       <div class="ruta-card-footer">
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ruta-2">Más información</button>
+                       </div>
+                   </div>
+    <!-- Ruta Nav tabs - Se debe modificar el id para cada ruta-->
+    <div class="modal fade" id="ruta-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!--     Aqui se indica el titulo para el modal de la ruta -->
+            <h3 class="modal-title" id="myModalLabel">#PalEste2017</h3>
+          </div>
+      <div class="modal-body">
+       <div>
+
+  <!-- Ruta Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#info-1" aria-controls="info-1" role="tab" data-toggle="tab">Información general</a></li>
+    <li role="presentation"><a href="#notas-1" aria-controls="notas-1" role="tab" data-toggle="tab">Politcas</a></li>
+    <li role="presentation"><a href="#reserva-1" aria-controls="reserva-1" role="tab" data-toggle="tab">Reserva tu cupo</a></li>
+  </ul>
+
+  <!-- Ruta Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="info-1">
+       <br>
+       <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
+        <h4>Horarios generales</h4>
+        <p><b>Sábado 20 de mayo</b></p>
+        <ul>
+            <li>SANTIAGO: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:00AM.</li>
+            <li>SANTO DOMINGO: KM9 Aut Duarte (Frente a la parada del Metro) o en La Torre Popular (Lado de la Kennedy) a las 9:00AM.</li>
+        </ul>
+        <p><b>Domingo 21 de mayo</b></p>
+          <ul>
+            <li>SANTIAGO: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:00AM.</li>
+            <li>SANTO DOMINGO: KM9 Aut Duarte (Frente a la parada del Metro) o en La Torre Popular (Lado de la Kennedy) a las 9:00AM.</li>
+        </ul>
+        <h4>Recorreremos</h4>
+        <ul>
+            <li>Los Tres Ojos</li>
+            <li>Pueblo de La Romana</li>
+            <li>La Basilica de Higuey</li>
+            <li>Playa Macao, Bavaro</li>
+            <li>Cueva Taina y piscina natural, Bavaro</li>
+            <li>Montana Redonda, Miches (Noche de camping en Montana Redonda!!)</li> 
+        </ul>
+        <h4>Cosas para llevar:</h4>
+         <ul>
+            <li>Botella de agua (*IMPORTANTE*)</li>
+            <li>Linterna</li>
+            <li>Repelente de mosquitos**</li>
+            <li>Traje de baño</li>
+            <li>Zapatos cómodos (que puedas ensuciar)</li>
+            <li>Toalla, colcha/sleeping bag para dormir</li>
+            <li>Artículos y medicamentos personales</li>
+            <li>Plato, vaso, cubiertos (opcional)</li>
+            <li>Sweater (hara frío en la noche)</li>
+         </ul>
+         <h4>Que está incluido?</h4>
+            <ul>
+                <li>Staff de RTM</li>
+                <li>Casas de campaña (Si tienes una llévala para tener más espacio)</li>
+                <li>Transporte</li>
+                <li>Entrada a Montana Redonda</li>
+                <li>Cena del sábado y desayuno </li>
+                <li>Llevamos kit de primeros auxilios, papel de baño y agua potable.</li>
+            </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="notas-1">
+    <br>
+       <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
+        <p>Nota #1: Si pierdes la salida serás responsable de alcanzarnos en el próximo punto de la excursión</p>
+        <p>Nota #2: Estas son horas de llegada aproximadas, puede variar segun el trafico y otros factores</p>
+        <p>Nota #3: Se entregará el itinerario final de la excursión antes de subir al autobús</p>
+        <p>Nota #4: No tendremos mucho espacio en el bus, así que por favor solo llevar un backpack/mochila pequeña.</p>
+        <p>Nota #5: El acceso a baño podría ser restringido, usualmente utilizamos "Paradas de Comida" para usar el baño.</p>
+        <p>Nota #6: Se te enviará el menú que tendremos para la cena y desayuno días antes del roadtrip, cocinamos nosotros mismos y tratamos de hacer cosas sencillas y fáciles.</p>
+        <p>Nota #7: En nuestras rutas la entrada a monumentos y parques nacionales es opcional (En este caso), por lo que no cubrimos los costos de entrada. Dicho esto, si decide entrar a Los Tres Ojos deberá pagarlo usted mismo. El precio por persona es de RD$100 por persona, aunque generalmente conseguimos bajar este precio al momento de la entrada por cantidad del grupo. </p>
+        <p>Nota #8: Nuestra política dicta que solo las primeras personas que pagan (al menos el 40%) aseguran su cupo. Si luego de asegurar el cupo deciden no participar de la excursión se le devolverá el dinero SI Y SOLO SI hay otra persona que va por ellos (dígase la siguiente en la lista de espera). Las devoluciones se harán efectivas a más tardar la semana siguiente después de la excursión utilizando la misma vía que se utilizó para realizar el pago (Ejp. depósito en cuenta de Banco Popular o BHD/Leon).</p>
+        <h4>Nos sentimos obligados a hacer cumplir esta política ya que si al final una persona no va y retira su dinero puede poner en riesgo la excursión para todo el grupo.</h4>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="reserva-1">
+       <br>
+        <p class="bg-danger">Por favor lee atentamente la <b>INFORMACIÓN GENERAL</b> y las <b>POLITICAS</b> antes de realizar tu reserva.</p>
+        <h4>Tarjetas de credito</h4>
+       <p>Para pagar con tu tarjeta de crédito/debito solo debes hacer click en el botón debajo. Al hacer click te llevara a otra pagina en donde completaras el proceso de pago.</p>
+        <h4>Deposito bancario</h4>
+        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>. 
+        <h4>En persona</h4>
+        <p>Tenemos un miembro del equipo en PUCMM-Stgo que puede recibir el pago.</p>
+    </div>
+  </div>
+
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">&larr; Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+                   
+                </div>
+                
+                </div>
+                <!-- Termina bloque de la ruta -->
+                
+            </div>
+        </div>
+    </section>
+        <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Dominican Travel Community</h2>
                     <hr class="light">
-                    <p class="text-faded">Somos una comunidad de turismo interno creada en el año 2010 por un grupo de amigos aventureros que decidió aprovechar su experiencia viajando alrededor de la isla para organizar excursiones a bajo costo. Nuestros viajes están abiertos a personas mayores de edad, aventureras como nosotros e interesadas en conocer las riquezas inagotables de nuestra amada República Dominicana. 
-
-Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencias y proyectos con el objetivo de llegar a los corazones aventureros de todos nuestros participantes.</p>
-                    <a href="https://www.facebook.com/RoadTripMakers" target="_blank" class="btn btn-default btn-xl">¿Próximas Aventuras?</a>
+                    <p class="text-faded">Somos una comunidad de turismo interno creada en el año 2010 por un grupo de amigos aventureros que decidió aprovechar su experiencia viajando alrededor de la isla para organizar excursiones a bajo costo. Nuestros viajes están abiertos a personas mayores de edad, aventureras como nosotros e interesadas en conocer las riquezas inagotables de nuestra amada República Dominicana. Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencias y proyectos con el objetivo de llegar a los corazones aventureros de todos nuestros participantes.</p>
+                    <a href="#rutas" target="" class="page-scroll btn btn-default btn-xl">¿Próximas Aventuras?</a>
                 </div>
             </div>
         </div>
@@ -109,7 +506,7 @@ Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencia
         </div>
         <div class="container">
             <div class="row">
-                 <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-user-plus wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Pasión!</h3>
@@ -123,11 +520,12 @@ Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencia
                         <p class="text-muted">Sí! Acampamos donde vamos! (Sobretodo en la playa). Tenemos capacidad para más de 50 personas en nuestras casas de campaña, siempre listas para que se arme la aventura!</p>
                     </div>
                 </div>
-                 <div class="col-lg-3 col-md-6 text-center">
+                
+                <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-bus wow bounceIn text-primary"></i>
                         <h3>Transporte Especializado</h3>
-                        <p class="text-muted">#MargaraLaRodadora, nuestro propio Adventure Bus para 15 pasajeros, además de una gran red de choferes experimentados y cómodos autobuses de  30/34 pasajeros con servicios confiables y económicos!</p>
+                        <p class="text-muted">#MargaraLaRodadora, nuestro propio Adventure Bus para 15 pasajeros, además de una gran red de choferes experimentados y cómodos autobuses de 30/34 pasajeros con servicios confiables y económicos!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -142,7 +540,14 @@ Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencia
     </section>
 
     <section class="no-padding" id="portfolio">
+       
         <div class="container-fluid">
+             <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Imagenes</h2>
+                    <hr class="dark">
+                    <p class="text-muted">Esta sección podras encontrar imagenes de algunas de nuestras aventuras pasadas.</p>
+                    <br>
+                </div>
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="http://bit.ly/1RpX9Mj" target="_blank" class="portfolio-box">
@@ -168,7 +573,7 @@ Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencia
                                     RoadTrip
                                 </div>
                                 <div class="project-name">
-                                    #PaSaona2017                                </div>
+                                    #PaSaona2017 </div>
                             </div>
                         </div>
                     </a>
@@ -237,58 +642,25 @@ Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencia
         </div>
     </section>
 
-    <aside class="bg-dark">
+    <section id="contact" class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>¿Has viajado con nosotros? Ayúdanos a crecer dandonos tu opinión!</h2>
+                <hr class="primary">
                 <a href="http://bit.ly/roadtripmakers" class="btn btn-default btn-xl wow tada">FeedBack Form</a>
             </div>
         </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
+        <div class="container text-center" style="margin-top:32px;">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="ZEMD45V4WNWD6">
-<table>
-<tr><td><input type="hidden" name="on0" value="Cual de nuestras rutas?">Cual de nuestras rutas?</td></tr><tr><td><select name="os0">
-	<option value="Pa' Rincon 2017">Pa' Rincon 2017 $25.00 USD</option>
-	<option value="POP 2017">POP 2017 $12.00 USD</option>
-	<option value="Pa' Haiti 2017">Pa' Haiti 2017 $60.00 USD</option>
-	<option value="Prueba">Prueba $1.00 USD</option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-                    <h2 class="section-heading">¿Cómo te enteras de nuestras aventuras?</h2>
-                    <hr class="primary">
-                    <p>Fácil! Escríbenos un email, tíranos por whatsapp, síguenos en instagram, dale like al fan page.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-whatsapp fa-3x wow bounceIn"></i>
-                    <p><a href="#contact">809.608.5503</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:roadtripmakers@gmail.com">RoadTripMakers@gmail.com</a></p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-instagram fa-3x wow bounceIn"></i>
-                    <p><a href="https://www.instagram.com/roadtripmakers/" target="_blank">@RoadTripMakers</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-facebook fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="https://www.facebook.com/RoadTripMakers" target="_blank">@RoadTripMakers</a></p>
-                </div>
+                <ul class="social-footer">
+                    <li><a href=""><i class="fa fa-instagram fa-4x wow bounceIn"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook fa-4x wow bounceIn"></i></a></li>
+                </ul>
+                <p>Llamanos o escribenos al <a href="tel:8096085503">809.608.5503</a> o envianos un correo a <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a></p>
             </div>
         </div>
     </section>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
