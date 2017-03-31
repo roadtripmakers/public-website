@@ -111,7 +111,7 @@
             <div class="row rutas-grid">
                 <div class="col-xs-12 col-sm-6 col-md-3">
                 <div class="ruta-card" id="ruta-card">
-                   <div class="no-cupo">
+                   <div class="no-cupo hide">
                         <div class="no-cupo-content">
                             <img src="img/sad-face.png" alt="">
                             <p><b>No hay cupos disponibles</b></p>
@@ -121,7 +121,7 @@
                    <div class="ruta-card-header">
                        <img src="img/ruta-1.jpg" alt="">
                        <div class="ruta-card-disponible">
-                           Cupo disponible <span>23</span>
+                           Cupo disponible <span class="cupo-disponible">23</span>
                        </div>
                    </div>
                    <div class="ruta-card-content">
@@ -132,9 +132,26 @@
                        <h4>A rodar Pa' Puerto Plata</h4>
                        <p>Un #DomingoChill rodando por la impresionante provincia de PUERTO PLATA!</p>
                        <div class="ruta-card-footer">
-                              <button type="button" class="btn btn-primary ">Más información</button>
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ruta-1">Más información</button>
                        </div>
                    </div>
+                   <!-- Modal -->
+<div class="modal fade" id="ruta-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Ruta 1</h3>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">&larr; Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
                    
                 </div>
                 
