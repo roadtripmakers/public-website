@@ -51,6 +51,15 @@ a:focus {
     margin-right: 16px;
 }
 
+.navbar-brand {
+        padding: 7px !important;
+    }
+    
+     .navbar-brand-icon{
+        height: 100% !important;
+        width: auto;
+    }
+
 h1,
 h2,
 h3,
@@ -273,13 +282,14 @@ aside {
     }
     
     .navbar-brand {
-        padding: 7px;
+        padding: 7px !important;
     }
     
-     .navbar-brand img{
-        height: 100%;
+     .navbar-brand-icon{
+        height: 100% !important;
         width: auto;
     }
+    
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
         color: rgba(254,15,23,.6);
