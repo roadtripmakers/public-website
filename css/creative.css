@@ -96,6 +96,10 @@ p {
     width: 100%;
 }
 
+.ruta-card-footer {
+    margin: 16px 0px 0px 0px;
+}
+
 .ruta-card-disponible {
     position: absolute;
     bottom: -18px;
