@@ -53,15 +53,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#rutas">Próximas rutas</a>
-                    </li>
+                    
                     <li>
                         <a class="page-scroll" href="#about">¿Qué es #RoadTripMakers?</a>
                     </li>
                     
                     <li>
                         <a class="page-scroll" href="#services">¿Cómo lo hacemos?</a>
+                    </li>
+                      <li>
+                        <a class="page-scroll" href="#rutas">Próximas rutas</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Fotografias</a>
@@ -87,8 +88,64 @@
             </div>
         </div>
     </header>
-    
-       <section class="bg-dark" id="rutas">
+        <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Dominican Travel Community</h2>
+                    <hr class="light">
+                    <p class="text-faded">Somos una comunidad de turismo interno creada en el año 2010 por un grupo de amigos aventureros que decidió aprovechar su experiencia viajando alrededor de la isla para organizar excursiones a bajo costo. Nuestros viajes están abiertos a personas mayores de edad, aventureras como nosotros e interesadas en conocer las riquezas inagotables de nuestra amada República Dominicana. Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencias y proyectos con el objetivo de llegar a los corazones aventureros de todos nuestros participantes.</p>
+                    <a href="#rutas" target="" class="page-scroll btn btn-default btn-xl">¿Próximas Aventuras?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">¿Cómo lo hacemos posible?</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-user-plus wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Pasión!</h3>
+                        <p class="text-muted">En conjunto reunimos más de 7 años de experiencia. Somos un equipo de jovenes apasionados, conformado por profesionales en área de la medicina, administración, contabilidad, leyes y turismo en general!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-home wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Casas de Campaña</h3>
+                        <p class="text-muted">Sí! Acampamos donde vamos! (Sobretodo en la playa). Tenemos capacidad para más de 50 personas en nuestras casas de campaña, siempre listas para que se arme la aventura!</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-bus wow bounceIn text-primary"></i>
+                        <h3>Transporte Especializado</h3>
+                        <p class="text-muted">Tenemos a Margara, nuestra sport mobile de 15 personas equipada con todo lo necesario para la aventura! Además de una gran red de choferes experimentados y cómodos autobuses de 30/34 pasajeros con servicios confiables y económicos!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-life-ring wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Seguridad</h3>
+                        <p class="text-muted">Durante los pasados 7 años, hemos desarrollado fuertes relaciones con los cuerpos nacionales del orden, siendo el Cuerpo Especializado de Seguridad Turística (CESTUR) y la Marina de Guerra nuestros mejores aliados a la hora de acampar al aire libre, sin contar los cientos de locales y comunidades que nos apoyan a lo largo del país!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="bg-dark" id="rutas">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -97,11 +154,13 @@
                     <p class="text-faded">Mas en IG con el hasgtag #AgendaRTM.</p>
                 </div>
             </div>
+<!--            Para agregar más rutas puedes copiar todo este bloque.-->
             <div class="row rutas-grid">
                <!-- Este bloque contiene la informacion de una ruta -->
                 <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="ruta-card" id="ruta-card">
-                   <div class="no-cupo hide">
+                <!-- Cuando una ruta ya no tenga cupo, solo debes quitar el texto HIDE al lado de NO-CUPO  -->  
+                <div class="no-cupo hide">
                         <div class="no-cupo-content">
                             <img src="img/sad-face.png" alt="">
                             <p><b>No hay cupos disponibles</b></p>
@@ -109,7 +168,7 @@
                         </div>
                     </div>
                    <div class="ruta-card-header">
-                       <img src="img/ruta-2.jpg" alt="">
+                       <a href="https://www.instagram.com/explore/tags/agendartm/?hl=en" target="_blank"><img src="img/ruta-2.jpg" alt=""></a>
                        <div class="ruta-card-disponible">
                            Cupo disponible <span class="cupo-disponible">14</span>
                        </div>
@@ -198,7 +257,9 @@
         <h4>En persona</h4>
         <p>Tenemos un miembro del equipo en PUCMM-Stgo que puede recibir el pago.</p>
         <h4>Deposito bancario</h4>
-        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>. 
+        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>.
+        <p>Usa este botón o envíanos un correo a <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a> con tu comprobante de pago.</p>
+        <p><a href="mailto:roadtripmakers@gmail.com" class="btn btn-primary">Enviar comprobante</a></p> 
         <h4>Tarjetas de crédito</h4>
         <p>Para pagar con tarjeta de crédito/debito has click en el botón debajo, esto te llevara a la página en donde completaras el proceso de pago.</p>
         <p>Los pagos con tarjeta de credito tienen un cargo extra de 6%.</p>
@@ -218,7 +279,8 @@
                 
                 </div>
                 <!-- Termina bloque de la ruta -->
-                <!-- Este bloque contiene la informacion de una ruta -->
+                <!-- Bloque de la ruta -->
+                <!-- Este bloque contiene la informacion de una ruta, para agregar una nueva solo debes copiar y pegar todo este bloque de codigo -->
                 <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="ruta-card" id="ruta-card">
                    <div class="no-cupo hide">
@@ -229,7 +291,7 @@
                         </div>
                     </div>
                    <div class="ruta-card-header">
-                       <img src="img/ruta-3.jpg" alt="">
+                       <a href="https://www.instagram.com/explore/tags/agendartm/?hl=en" target="_blank"><img src="img/ruta-3.jpg" alt=""></a>
                        <div class="ruta-card-disponible">
                            Cupo disponible <span class="cupo-disponible">25</span>
                        </div>
@@ -270,12 +332,12 @@
        <br>
        <p class="bg-danger">Por favor lee atentamente antes de realizar tu reserva.</p>
         <h4>Horarios generales</h4>
-        <p><b>SALIMOS: Sábado 20 de mayo</b></p>
+        <p>SALIMOS: Sábado 20 de mayo</p>
         <ul>
             <li>SANTIAGO: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:00AM.</li>
             <li>SANTO DOMINGO: KM9 Aut Duarte (Frente a la parada del Metro) o en La Torre Popular (Lado de la Kennedy) a las 9:00AM.</li>
         </ul>
-        <p><b>LLEGAMOS: Domingo 21 de mayo</b></p>
+        <p>LLEGAMOS: Domingo 21 de mayo</p>
           <ul>
             <li>SANTIAGO: Puerta 1 (UNO) de la PUCMM-Santiago a las 7:00AM.</li>
             <li>SANTO DOMINGO: KM9 Aut Duarte (Frente a la parada del Metro) o en La Torre Popular (Lado de la Kennedy) a las 9:00AM.</li>
@@ -334,7 +396,9 @@
         <h4>En persona</h4>
         <p>Tenemos un miembro del equipo en PUCMM-Stgo que puede recibir el pago.</p>
         <h4>Deposito bancario</h4>
-        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>. 
+        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>.
+       <p>Usa este botón o envíanos un correo a <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a> con tu comprobante de pago.</p>
+        <p><a href="mailto:roadtripmakers@gmail.com" class="btn btn-primary">Enviar comprobante</a></p> 
         <h4>Tarjetas de crédito</h4>
         <p>Para pagar con tarjeta de crédito/debito has click en el botón debajo, esto te llevara a otra página en donde completaras el proceso de pago.</p>
         <p>Los pagos con tarjeta de credito tienen un cargo extra de 6%.</p>
@@ -357,7 +421,8 @@
                   <!-- Este bloque contiene la informacion de una ruta -->
                 <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="ruta-card" id="ruta-card">
-                   <div class="no-cupo">
+<!--                   Para desactivar el modo sin cupo solo debes agregar la clase HIDE al lado de NO-CUPO. Debe verse asi class="no-cupo hide"-->
+                       <div class="no-cupo">
                         <div class="no-cupo-content">
                             <img src="img/sad-face.png" alt="">
                             <p><b>No hay cupos disponibles</b></p>
@@ -365,7 +430,7 @@
                         </div>
                     </div>
                    <div class="ruta-card-header">
-                       <img src="img/ruta-1.jpg" alt="">
+                       <a href="https://www.instagram.com/explore/tags/agendartm/?hl=en" target="_blank"><img src="img/ruta-1.jpg" alt=""></a>
                        <div class="ruta-card-disponible">
                            Cupo disponible <span class="cupo-disponible">0</span>
                        </div>
@@ -466,7 +531,8 @@
         <h4>Tarjetas de credito</h4>
        <p>Para pagar con tu tarjeta de crédito/debito solo debes hacer click en el botón debajo. Al hacer click te llevara a otra pagina en donde completaras el proceso de pago.</p>
         <h4>Deposito bancario</h4>
-        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>. 
+        <p>Vía nuestra cuenta del <b>Banco Popular Dominicano (No. de cuenta 766428825)</b> o en <b>BHD-León (No. de cuenta 15407370033)</b>.</p>
+        <p class="bg-warning">Usa <a href="mailto:roadtripmakers@gmail.com">este link</a> para enviarnos un correo a  <a href="mailto:roadtripmakers@gmail.com">roadtripmakers@gmail.com</a> con la imágen del recibo de deposito.</p>
         <h4>En persona</h4>
         <p>Tenemos un miembro del equipo en PUCMM-Stgo que puede recibir el pago.</p>
     </div>
@@ -486,70 +552,16 @@
                 </div>
                 <!-- Termina bloque de la ruta -->
                 
-            </div>
-        </div>
-    </section>
-        <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Dominican Travel Community</h2>
-                    <hr class="light">
-                    <p class="text-faded">Somos una comunidad de turismo interno creada en el año 2010 por un grupo de amigos aventureros que decidió aprovechar su experiencia viajando alrededor de la isla para organizar excursiones a bajo costo. Nuestros viajes están abiertos a personas mayores de edad, aventureras como nosotros e interesadas en conocer las riquezas inagotables de nuestra amada República Dominicana. Desde entonces no hemos parado de crear, organizar e ingeniar nuevas experiencias y proyectos con el objetivo de llegar a los corazones aventureros de todos nuestros participantes.</p>
-                    <a href="#rutas" target="" class="page-scroll btn btn-default btn-xl">¿Próximas Aventuras?</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">¿Cómo lo hacemos posible?</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-user-plus wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Pasión!</h3>
-                        <p class="text-muted">En conjunto reunimos más de 7 años de experiencia. Somos un equipo de jovenes apasionados, conformado por profesionales en área de la medicina, administración, contabilidad, leyes y turismo en general!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-home wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Casas de Campaña</h3>
-                        <p class="text-muted">Sí! Acampamos donde vamos! (Sobretodo en la playa). Tenemos capacidad para más de 50 personas en nuestras casas de campaña, siempre listas para que se arme la aventura!</p>
-                    </div>
-                </div>
                 
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-bus wow bounceIn text-primary"></i>
-                        <h3>Transporte Especializado</h3>
-                        <p class="text-muted">Tenemos a Margara, nuestra sport mobile de 15 personas equipada con todo lo necesario para la aventura! Además de una gran red de choferes experimentados y cómodos autobuses de 30/34 pasajeros con servicios confiables y económicos!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-life-ring wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Seguridad</h3>
-                        <p class="text-muted">Durante los pasados 7 años, hemos desarrollado fuertes relaciones con los cuerpos nacionales del orden, siendo el Cuerpo Especializado de Seguridad Turística (CESTUR) y la Marina de Guerra nuestros mejores aliados a la hora de acampar al aire libre, sin contar los cientos de locales y comunidades que nos apoyan a lo largo del país!</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
-    <section class="no-padding" id="portfolio">
+      <section class="no-padding" id="portfolio">
        
         <div class="container-fluid">
              <div class="col-lg-8 col-lg-offset-2 text-center">
+                   <br>
+                   <br>
                     <h2 class="section-heading">Imágenes</h2>
                     <hr class="dark">
                     <p class="text-muted">Aquí algunas fotografias de nuestras aventuras pasadas.</p>
