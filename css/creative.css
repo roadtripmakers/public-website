@@ -55,7 +55,7 @@ a:focus {
         padding: 7px !important;
     }
     
-     .navbar-brand-icon{
+.navbar-brand-icon{
         height: 100% !important;
         width: auto;
     }
@@ -85,7 +85,7 @@ p {
         background: #fff;
         color: #666666;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-        margin-bottom: 16px;
+        margin-bottom: 24px;
 }
 
 .ruta-card-header {
@@ -94,6 +94,10 @@ p {
 
 .ruta-card-header img{
     width: 100%;
+}
+
+.ruta-card-footer {
+    margin: 16px 0px 0px 0px;
 }
 
 .ruta-card-disponible {
