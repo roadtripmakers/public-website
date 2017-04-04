@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: "Open Sans",'Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -19,7 +19,6 @@ hr {
     border-color: red;
     border-width: 3px;
 }
-
 hr.light {
     border-color: #fff;
 }
@@ -157,9 +156,27 @@ p {
 }
 
 /* Estilos para el contenido de los tabs */    
+.tab-content form{
+    width: 90%;
+    margin: 16px auto;
+    text-align: center;
+    
+}
+
 .tab-content h4,
-.tab-content .bg-danger p{
+.tab-content .bg-danger,
+.tab-content b{
     color:#B80C0C;
+}
+
+.tab-content h4 {
+    color:#B80C0C;
+    font-size: 18px;
+}
+
+.nav-tabs {
+    font-family: "Open sans";
+    font-weight: bold;
 }
 /* Estilo para las rutas sin cupo */
 .no-cupo {
