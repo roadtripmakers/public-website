@@ -36,7 +36,8 @@ a:focus {
     color: red;
 }
 
-.bg-danger {
+.bg-danger,
+.bg-warning{
     padding: 8px;
     text-align: center;
 }
@@ -155,6 +156,11 @@ p {
     
 }
 
+/* Estilos para el contenido de los tabs */    
+.tab-content h4,
+.tab-content .bg-danger p{
+    color:#B80C0C;
+}
 /* Estilo para las rutas sin cupo */
 .no-cupo {
     position: absolute;
@@ -226,7 +232,7 @@ aside {
 }
 
 .navbar-default {
-    border-color: rgba(34,34,34,.05);
+    border-color: rgba(255,255,255,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
@@ -272,7 +278,7 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(254,15,23,.6);;
+        border-color: rgba(255,255,255,.5);
         background-color: transparent;
     }
 
@@ -296,12 +302,12 @@ aside {
     
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(254,15,23,.6);
+        color: rgba(255,255,255,.6);
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #000;
+        color: #fff;
     }
 
     .navbar-default.affix {
